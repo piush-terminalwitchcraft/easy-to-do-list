@@ -1,0 +1,27 @@
+.list-task-body{
+    display: flex  ;
+    gap: 16px;
+}
+
+.task{
+    position: relative;
+    padding: 4px;
+    margin-top: 8px;
+    border: 1px solid; 
+    cursor: grabbing;
+    border-radius: 8px;
+    gap: 16px;
+
+}
+
+.delete-task{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    bottom: -10%;
+    right:-1%;
+    color: grey;
+
+}

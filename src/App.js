@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Header, ListTask } from './Components';
+import { Toaster } from 'react-hot-toast';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 function App() {
+  const [tasks, setTasks] = useState([])
+
+
+  console.log(tasks)
+
   return (
+    <DndProvider backend={HTML5Backend}>
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toaster />
+      <Header tasks={tasks} setTasks={setTasks}/>
+      <ListTask tasks={tasks} setTasks={setTasks}/>
     </div>
+    </DndProvider>
   );
 }
 

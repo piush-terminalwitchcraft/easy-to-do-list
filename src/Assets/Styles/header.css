@@ -1,0 +1,9 @@
+.header-input{
+    border: 2px solid grey;
+    background-color: bisque;
+    margin: 12px; 
+    font-size: 1.4rem;
+    width: 30vw;
+    border-radius: 8px;
+    padding: 4px;
+}

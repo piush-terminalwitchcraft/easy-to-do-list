@@ -1,9 +1,18 @@
-.header-input{
-    border: 2px solid grey;
-    background-color: bisque;
+.header-input , .header-input:focus-visible{
+    border: 2px solid #DAC0A3;
+    background-color: white;
     margin: 12px; 
     font-size: 1.4rem;
     width: 30vw;
     border-radius: 8px;
     padding: 4px;
+}
+
+.header-submit{
+    border: 1px solid #EADBC8;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    padding: 8px;
+    background-color: #DAC0A3;
+    color: white;
 }

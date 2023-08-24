@@ -3,25 +3,52 @@
     gap: 16px;
 }
 
+.section {
+    width: 30vw;
+    padding: 8px;
+    min-height: 180vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-highlight{
+    background-color: #EADBC8;
+}
+
+.section h2{
+    color: #102C57;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #102C57
+}
+
 .task{
     position: relative;
-    padding: 4px;
+    padding: 8px;
     margin-top: 8px;
-    border: 1px solid; 
+    border: 1px solid #102C57;
+    background-color: white; 
     cursor: grabbing;
     border-radius: 8px;
     gap: 16px;
+    font-size: 1.2rem;
+    color: #102C57;
 
+}
+
+.task-drag{
+    opacity: 0.5;
+    background-color: #F8F0E5;
 }
 
 .delete-task{
     position: absolute;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     background: none;
     border: none;
-    bottom: -10%;
-    right:-1%;
-    color: grey;
-
+    bottom: 1%;
+    right:1%;
+    cursor: pointer;
+    color: #DAC0A3;
 }

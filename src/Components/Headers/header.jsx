@@ -39,7 +39,7 @@ function Header(props) {
                     onChange={(e) => setTask({ ...task, id: uuid(), name: e.target.value })}
                     value={task.name}
                 ></input>
-                <button>Submit</button>
+                <button className='header-submit'>Submit</button>
             </form>
         </div>
     )

@@ -36,6 +36,7 @@ function Header(props) {
         <div>
             <form onSubmit={handleSubmit}>
                 <input type='text' className='header-input'
+                placeholder='Enter task description'
                     onChange={(e) => setTask({ ...task, id: uuid(), name: e.target.value })}
                     value={task.name}
                 ></input>
